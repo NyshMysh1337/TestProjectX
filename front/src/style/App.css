@@ -1,0 +1,262 @@
+body {
+ font-family: 'Inter', sans-serif;
+}
+
+.layout {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 550px;
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid #F2F2F5;
+  box-shadow: 0 8px 16px 0 #55577029;
+}
+
+.content {
+  max-width: 470px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-header span {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #28293D;
+}
+
+.converter {
+  width: 288px;
+  height: 52px;
+  top: 24px;
+  border-radius: 8px;
+  border: 1px;
+}
+
+.card-item {
+  width: 116px;
+  height: 80px;
+  top: 4px;
+  border-radius: 8px;
+  background: #6698FA;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card-info {
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+
+.card-plus {
+  border: 2px solid #3E7BFA;
+  width: 116px;
+  height: 80px;
+  top: 4px;
+  border-radius: 8px;
+  background: #F2F2F5;
+  margin-top: 20px;
+}
+
+.card-plus span,
+.card-cvv span
+{
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #555770;
+}
+
+.card-cvv span {
+  text-transform: uppercase;
+}
+
+.card {
+  position: absolute;
+  z-index: 2;
+  width: 324px;
+  height: 208px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #A6C8FF 0%, #0043CE 100%);
+}
+
+.card-back {
+  position: relative;
+  z-index: 1;
+  left: 170px;
+  margin-top: 33px;
+  top: 3px;
+}
+
+.card-cvv {
+  position: absolute;
+  top: 70px;
+  left: 170px;
+  width: 104px;
+}
+
+.card-cvv span {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #555770;
+  text-transform: uppercase;
+}
+
+.card-cvv input {
+  width: 72px;
+  height: 38px;
+  border-radius: 8px;
+  padding-left: 10px;
+  border: 1px solid #F2F2F5;
+}
+
+.card-cvv input::placeholder,
+.card .card-data::placeholder,
+.card .card-number::placeholder
+{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #8F90A6;
+}
+
+.card-cvv p {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+  color: #555770;
+}
+
+.card span, .card-info span {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.card div {
+  width: 284px;
+  height: 168px;
+  padding: 28px 0 0 0;
+  margin-left: 20px;
+}
+
+.card .card-number {
+  width: 284px;
+  height: 38px;
+  top: 24px;
+  border-radius: 8px;
+  border: 1px solid #E4E4EB;
+  padding-left: 10px;
+}
+
+.card .card-data {
+  width: 72px;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid #E4E4EB;
+  padding-left: 10px;
+}
+
+.ttt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.bla {
+  display: flex;
+}
+
+.agreement {
+  display: flex;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: #555770;
+}
+
+.agreement div {
+  margin-top: 21px;
+}
+
+.agreement input {
+  border: 1px solid #3E7BFA;
+}
+
+.pay {
+  width: 141px;
+  height: 52px;
+  padding: 14px 32px 14px 32px;
+  border-radius: 100px;
+  background: #3E7BFA;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.002em;
+  text-align: center;
+  color: #FFFFFF;
+  border: 1px solid #F2F2F5;
+  margin-top: 20px;
+}
+.error {
+  border: 2px solid red;
+}
+
+.myCheckbox {
+  display: none;
+}
+
+.myCheckboxLabel {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+.myCheckboxLabel:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #3E7BFA;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/*.myCheckboxLabel:before {*/
+/*  !* Изменение размера линий *!*/
+/*  border-width: 4px;*/
+/*}*/
+
+/*.myCheckbox:checked + .myCheckboxLabel:before {*/
+/*  !* Изменение цвета линий при выборе *!*/
+/*  border-color: #ff0000;*/
+/*}*/
+

@@ -1,0 +1,59 @@
+@media (max-width: 490px){
+    .layout {
+        padding: 10px;
+        border: 0;
+        box-shadow: none;
+    }
+
+    .card-back {
+        position: relative;
+        z-index: 1;
+        left: 5px;
+        top: 100px;
+        margin-top: 33px;
+    }
+
+    .card-cvv {
+        display: flex;
+        position: absolute;
+        top: 130px;
+        left: 0;
+        width: auto;
+    }
+
+    .test {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+
+    .test input {
+    }
+
+    .card-cvv p {
+        margin-left: 10px;
+    }
+
+    .agreement {
+        margin-top: 90px;
+    }
+}
+
+@media (max-width: 550px){
+    .layout {
+        padding: 1px;
+    }
+
+    .card {
+        width: auto;
+        height: auto;
+    }
+
+    .card .card-number {
+        width: 240px;
+    }
+
+    .card-back img {
+        width: 292px;
+    }
+}
