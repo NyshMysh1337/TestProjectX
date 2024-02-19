@@ -3,17 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\Card\StoreRequest;
-use App\Http\Services\CardService;
-use App\Models\PaymentCard;
-use Illuminate\Http\Request;
+use App\Interfaces\ICard;
 
 class CardController extends Controller
 {
 
-    private CardService $cardService;
+    private ICard $cardService;
 
     public function __construct(
-        CardService $cardService
+        ICard $cardService
     ) {
         $this->cardService = $cardService;
     }
